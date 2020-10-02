@@ -1,0 +1,8 @@
+
+# USER MODIFICATIONS
+[pi0w]
+dtdebug=1
+enable_uart=1
+dtparam=i2c_arm=on
+dtparam=spi=on
+dtoverlay=waveshare32b:rotate=270

@@ -1,0 +1,13 @@
+country=IN
+
+network={
+        priority=1
+	ssid="BlueGum"
+	psk="9008866221"
+}
+
+network={
+        priority=2
+	ssid="DKGUPTA"
+	psk="9810056785"
+}

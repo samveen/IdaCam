@@ -1,0 +1,10 @@
+
+# Static fallback profile for wlan0
+profile static_wlan0
+static ip_address=192.168.1.31/24
+static routers=192.168.1.1
+static domain_name_servers=192.168.1.1
+
+# Attach fallback static profile on wlan0
+interface wlan0
+fallback static_wlan0

@@ -1,0 +1,7 @@
+# Waveshare LCD32-B support BEGIN
+sleep 3
+/usr/local/bin/fbcp &
+
+con2fbmap 1 0
+# Waveshare LCD32-B support END
+
