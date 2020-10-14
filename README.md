@@ -1,4 +1,4 @@
-## IdaCam - A Raspberry Pi Zero W camera 
+## IdaCam - A Raspberry Pi Zero W camera
 
 This project is inspired by
 [the Becca Cam](https://www.theverge.com/21306907/diy-camera-raspberry-pi-high-quality-how-to-build-video-c-cs-mount-lenses)
@@ -26,12 +26,12 @@ Looking at constucting a camera gave me the option of the Lomography Konstructor
 series, but they're film cameras which is a problem again.
 
 I had been experimenting with a Pi Z 1.3 (not a W) and found it to be very useful,
-and easy to use. Then When I came across Becca's article (and associated Youtube
-video), it was just the perfect thing to make for her. The price for all parts was
-within USD 150, and the weight was well within her holding capacity.
+and easy to use. Then, when I came across Becca's article (and associated Youtube
+video), I thought it was just the perfect thing to make for her. The price for all
+parts was within USD 150, and the weight was well within her holding capacity.
 
 This is now the way to create an interchangable lens camera from scratch for my
-daughter  while showing her the internals of a camera and educating her about `Making`.
+daughter while showing her the internals of a camera and educating her about `Making`.
 
 
 ### Hardware Requirements
@@ -77,7 +77,7 @@ daughter  while showing her the internals of a camera and educating her about `M
   - add wifi configurations and priorities to `etc/wpa_supplicant/wpa_supplicant.conf`. (TODO: Give Details)
   - enable ssh service via systemd linking. (TODO: Give Details)
 
-- Put in the SD card and boot up the W. Monitor the DHCP server to ensure that the the Zero W gets an IP address. 
+- Put in the SD card and boot up the W. Monitor the DHCP server to ensure that the the Zero W gets an IP address.
 
 #### Post boot setup
 
@@ -86,7 +86,7 @@ Get into the Pi Zero W and do the following:
 - Install the following packages:
   - `xserver-xorg-video-fbturbo` # display
   - `xserver-xorg-input-evdev` # Input from touch sensor, I think
-  - `xinput-calibrator`  # Calibration of input
+  - `xinput-calibrator` # Calibration of input
   - `xinit`
   - `git` and `cmake`
   - `python3-picamera`
@@ -97,7 +97,8 @@ Get into the Pi Zero W and do the following:
   - `git clone` the repo `https://github.com/tasanakorn/rpi-fbcp/`
   - set up build with `cmake`
   - build it with `make`
-  - Install `fbcp` into `/usr/local/bin/` (my preference, use any path dir based on yours)
+  - Install `fbcp` into `/usr/local/bin/` (my preference, use any path dir based
+    on yours)
 
 - Set up framebuffer initialization in `/etc/rc.local`
   - ``
@@ -117,9 +118,43 @@ TODO
 - Add scripts to automate actions
 - Investigate direct SPI display usage instead of HDMI display mirroring.
 
+## Extras - The IdaCardboardCam
+
+In an effort to get her to understand the concept of focusing the image with a
+manual focus lens, I decided to build her a small cardboard camera, using
+co-axially aligned cylinders(like a telescope), but using the lens from an old
+dysfunctional point-and-shoot 35mm film camera that my mum had lying around.
+
+We took it apart, showing her all the different parts, like the shutter, the
+flash, and other parts of it, to extract the lens. The lens was a molded 3-lens
+assembly which screwed onto the camera body, and was fixed with a bit of glue
+once it was focussing the light at the correct place (where the current frame
+of the film spool would be).
+
+The outer cylinder had the lens affixed to it's front, and the inner cylinder
+had a translucent plastic sheet (cut to the size of a single 35 mm film frame)
+as the focus point for the image as captured by the lens. I added an insert
+into the outer cylinder to disallow the inner cylinder from collapsing into the
+outer completely and damaging the focus point/moving the lens out of alignment.
+
+Pictures as below:
+
+![The IdaCardboardCam](images/IdaCardboardCam_1_small.jpg)
+
+![The Mascot, in the IdaCardboardCam](images/IdaCardboardCam_Ida_small.jpg)
+
+![Build Details 1](images/IdaCardboardCam_Build_1_small.jpg)
+
+![Build Details 2](images/IdaCardboardCam_Build_2_small.jpg)
+
+![Build Details 3](images/IdaCardboardCam_Build_3_small.jpg)
+
+![The Door, via the IdaCardboardCam](images/IdaCardboardCam_Door_small.jpg)
+
 ## License
 
-Everything here is released under the HIRE ME/PAY ME License (a modified 2 Clause BSD License). Please see the LICENSE file for details.
+Everything here is released under the HIRE ME/PAY ME License (a modified 2 Clause
+BSD License). Please see the LICENSE file for details.
 
 ## References:
 
