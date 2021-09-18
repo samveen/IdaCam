@@ -161,3 +161,16 @@ BSD License). Please see the LICENSE file for details.
 * [Google Fu(A BIG THANKS to the Google folks and Siva(HOD CSE IITB 2004))](https://www.google.com/)
 * [Interactive Raspberry Pi Pinout](https://pinout.xyz/)
 * [Waveshare LCD support repo](https://github.com/waveshare/LCD-show) - *WARNING: Doesn't work out of the box.*
+
+* [Grove LED Button Schematic](https://wiki.seeedstudio.com/Grove-LED_Button/#schematic-online-viewer)
+* [Random Button and LED tutorial for the RPi](https://www.electronicshub.org/raspberry-pi-push-button-interface/)
+* [Raspberry Pi Camera Documentation](https://www.raspberrypi.org/documentation/accessories/camera.html)
+* [Picamera Getting Started](https://picamera.readthedocs.io/en/release-1.13/quickstart.html)
+
+* [WaveShare 3.2inch RPi LCD (B)](https://www.waveshare.com/wiki/3.2inch_RPi_LCD_(B))
+
+* [RTC time with systemd on a Pi](https://learn.adafruit.com/adding-a-real-time-clock-to-raspberry-pi/set-rtc-time)
+
+* [Raspicam commands](https://github.com/raspberrypi/documentation/blob/develop/documentation/asciidoc/accessories/camera/raspicam.adoc) and `raspistill --help`
+* [Displaying an image on linux without running X](https://stackoverflow.com/questions/14211066/displaying-an-image-on-linux-without-running-x)
+* [Open An Image on Host While SSH'ed?](https://raspberrypi.stackexchange.com/questions/96024/open-an-image-on-host-while-sshed)
