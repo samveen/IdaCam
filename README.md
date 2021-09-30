@@ -174,3 +174,11 @@ BSD License). Please see the LICENSE file for details.
 * [Raspicam commands](https://github.com/raspberrypi/documentation/blob/develop/documentation/asciidoc/accessories/camera/raspicam.adoc) and `raspistill --help`
 * [Displaying an image on linux without running X](https://stackoverflow.com/questions/14211066/displaying-an-image-on-linux-without-running-x)
 * [Open An Image on Host While SSH'ed?](https://raspberrypi.stackexchange.com/questions/96024/open-an-image-on-host-while-sshed)
+* [WaveShare Tutorial: External Button](https://www.waveshare.com/wiki/Raspberry_Pi_Tutorial_Series:_External_Button)
+* [A solution to the question *use ssh to control tty1*](https://raspberrypi.stackexchange.com/a/22135/124471)
+* [fauxcon - the Solution to controlling the gallery via buttons](https://github.com/lornix/fauxcon)
+* [subprocess.Popen](https://docs.python.org/2/library/subprocess.html#subprocess.Popen)
+* [python signal defs](https://docs.python.org/2.7/library/signal.html)
+* [practical example of python subprocess control](https://stackoverflow.com/q/46750620/1353267)
+* [Controlling Pi Zero W swap size limit](https://raspberrypi.stackexchange.com/a/88656/124471)
+* `man fbi` on the `Raspberry Pi OS` command line interface.
