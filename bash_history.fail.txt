@@ -1,0 +1,355 @@
+sudo apt update
+vcgencmd help
+vcgencmd --help
+vcgencmd get_throttled
+sudo apt upgrade
+sudo apt install xinit
+sudo apt install xinit --no-install-recommends
+sudo apt install xinit xterm  --no-install-recommends
+sudo apt install xinit xterm x11-utils  --no-install-recommends
+sudo apt install xinit xterm  --no-install-recommends
+sudo apt install twm
+sudo apt install twm --no-install-recommends 
+sudo apt install xinit xterm twm --no-install-recommends
+startx
+apt search fbdev
+sudo apt show xserver-xorg-video-fbdev
+sudo apt install xserver-xorg-video-fbdev
+sudo apt install xserver-xorg-video-fbdev --no-install-recommends 
+sudo apt install --no-install-recommends  xserver-xorg-video-fbdev 
+sudo apt install xserver-xorg-video-fbdev --no-install-recommends 
+sudo apt install xserver-xorg-video-fbdev
+cd LCD-show/
+ls
+ls /usr/share/X11/xorg.conf.d/
+sudo rsync -av 99-fbturbo.conf-HDMI /usr/share/X11/xorg.conf.d/
+startx
+sudo startx
+sudo raspi-config 
+id
+ls /etc/groups
+cat /etc/group
+w
+vim .bashrc
+vi .bashrc
+cd
+vi .bashrc
+sudo su - pi
+sudo raspi-config 
+ip a
+ls -a
+less .xsession-errors 
+vim .xsession
+vi .xsession
+chmod 755 .xsession
+sudo reboot
+sudo dmesg
+sudo journalctl -n 100
+sudo su -
+sudo journalctl -n 100
+sudo journalctl -n 300
+sudo journalctl -n 300 --no-pager
+ls -a
+less .xsession-errors 
+ls -a
+cd /etc/
+sudo find . -name *twm*
+cd X11/twm/
+grep ad
+grep -o helv twm*
+grep -i helv twm*
+la
+ls
+grep -i helv *
+fc --help
+ls /usr/share/fonts
+ls /usr/share/fonts/X11
+find /usr/share/fonts
+grep -i helv *
+sudo apt install fontconfig
+fc-list
+sudo apt seaech fonts
+sudo apt search fonts
+sudo apt search fonts| grep dobe
+sudo apt dobe
+sudo apt search dobe
+sudo apt install xfonts-scalable
+sudo fc-list
+sudo apt purge xfonts-scalable
+sudo apt search xfonts
+sudo apt install xfonts-100dpi
+sudo fc-list
+sudo apt install 
+sudo fc-list0
+sudo apt purge xfonts-100dpi xfonts-75dpi
+sudo apt install vim
+ls
+grep -i helv *
+sudo rsync -av system.twmrc system.twmrc.dist
+sudo vim system.twmrc
+sudo reboot
+less .xsession-errors 
+fc-list
+cd /etc/X11/twm/
+ls
+sudo vim system.twmrc
+dif
+r
+sudo rsync -av system.twmrc.dist system.twmrc
+sudo vim system.twmrc
+sudo reboot
+ft-list --help
+tf-list
+ft-list
+ft-list --help
+fc-list
+sudo vim system.twmrc
+cd /etc/X11/twm/
+sudo vim system.twmrc
+sudo reboot
+tail .xsession-errors 
+cd /etc/X11/twm/
+sudo rsync -av system.twmrc.dist system.twmrc
+xlsfonts
+fc-list
+man fc-list
+fc-list
+sudo vim system.twmrc
+sudo reboot
+fc-list
+cd /usr/share/fonts/
+ls
+find88
+which xfd
+sudo apt search xfd000
+sudo apt install x11-utils
+which xfd
+xfd --help
+cd
+vim .xsession
+sudo reboot
+ls
+sudo apt install xserver-org-input-evdev
+sudo apt search evdev
+sudo apt install xserver-xorg-input-evdev
+ls /usr/share/X11/xorg.conf.d/
+ls /usr/share/X11/xorg.conf.d/10-evdev.conf 
+cat /usr/share/X11/xorg.conf.d/10-evdev.conf 
+sudo apt install xinput-calibrator
+sudo reboot
+screen -s share
+screen -S share
+sudo apt install screen
+4v.i
+screen -S share
+screen -S share -x
+ls /usr/share/X11/xorg.conf.d
+wget 'https://raw.githubusercontent.com/waveshare/LCD-show/master/etc/X11/xorg.conf.d/99-calibration.conf-32'
+sudo mv 99-calibration.conf-32 /usr/share/X11/xorg.conf.d/99-calibration.conf
+sudo reboot
+lspci
+sudo su -
+cat /usr/share/X11/xorg.conf.d/99-calibration.conf
+less .xsession-errors 
+cd .local/
+ls
+cd share/xorg/
+ls
+less Xorg.0.log
+free
+free -h
+cd
+vcgencmd help
+vcgencmd get_camera
+vcgencmd get_throttled
+vcgencmd get_mem arm
+vcgencmd get_mem gpu
+sudo raspi-config 
+grep -v '^#' /boot/config.txt
+sudo reboot
+xterm --help
+mab xterm
+man xterm
+vim .xsession
+sudo reboot
+screen
+screen -x
+sudo vim /usr/share/X11/xorg.conf.d/99-calibration.conf 
+sudo reboot
+set | grep DISP
+xclock
+xeyes
+xinput_calibrator 
+sudo vim /boot/config.txt
+sudo reboot
+screen -x
+sudo vim /usr/share/X11/xorg.conf.d/99-calibration.conf 
+sudo reboot
+xinput_calibrator 
+screen -x
+l
+xsetroot -bg grey
+sudo apt search xsetroot
+sudo apt install x11-server-utils
+sudo apt install x11-xserver-utils
+xsetroot -bg grey
+xsetroot -bg
+xsetroot -solid gray
+find .local/
+less .local/share/xorg/Xorg.0.log
+wget 'https://www.online-convert.com/downloadfile/7d6168dd-e6cd-4bfd-a5fc-abc407edf1af/92456838-73c2-4319-b833-773573b02e0c'
+file 92456838-73c2-4319-b833-773573b02e0c 
+xsetroot -bg
+xsetroot -bitmap 92456838-73c2-4319-b833-773573b02e0c 
+wget 'https://www.freefileconvert.com/file/aB-6B3q4l-k6/download'
+xsetroot -bitmap download 
+hs
+sudo dmesg |grep -i spi
+xsetroot -solid blue
+xsetroot -solid pink
+xsetroot -solid "dark pink"
+xsetroot -solid "magenta"
+xsetroot -solid "maroon"
+sudo poweroff
+
+vcgencmd get_camera
+raspistill --help 2>&1 | grep prev
+raspistill --fullpreview
+
+rpi-update --help
+sudo rpi-update --help
+which rpi-update
+file `which rpi-update`
+less `which rpi-update`
+cat /boot/issue.txt 
+raspistill --fullpreview
+ps -ef | grep rasp
+ps -ef | grep cam
+ps -ef | grep rpi
+sudo vim /boot/config.txt
+sudo reboot
+screen -x
+raspistill --fullpreview
+raspistill --help 2>&1 | grep 
+raspistill --fullpreview -t 0
+sudo poweroff
+Xorg --configure
+Xorg --configure 2>&1 | less
+Xorg -configure
+sudo Xorg -configure
+startx
+screen -x
+ls
+python3
+sudo apt search python3-gpiozero
+sudo apt install python3-gpiozero
+python3
+sudo poweroff
+pinout
+cd /boot
+cat config.txt 
+ls
+cat cmdline.txt 
+sudo vi cmdline.txt 
+sudo reboot
+sudo apt update
+sudo apt upgrade
+sudo apt install i2c-tools
+sudo reboot
+i2cdetect -y 1
+i2cdetect -y 0
+raspi-config 
+sudo raspi-config 
+cat /boot/config.txt 
+less /boot/config.txt 
+sudo reboot
+i2cdetect -y 0
+i2cdetect -y 1
+sudo vim /boot/config.txt 
+sudo reboot
+i2cdetect -y 1
+hwclock -r
+sudo hwclock -r
+sudo hwclock --verbose -r
+sudo poweroff
+sudo hwclock --verbose -r
+sudo dmesg |grep rtc
+i2cdetect -y 1
+sudo reboot
+sudo dmesg |grep rtc
+i2cdetect -y 1
+sudo poweroff
+i2cdetect -y 1
+sudo poweroff
+sudo i2cdetect  -y 1
+sudo poweroff
+sudo i2cdetect  -y 1
+date
+ip 
+ip a
+date
+sudo hwclock --verbose -r
+sudo hwclock --verbose -s
+sudo poweroff
+date
+date --utc
+hwclock --verbose -r
+sudo dmesg |grep rtc
+sudo hwclock --verbose -r
+date
+ls /etc/init.d/
+systemctl list-units 
+systemctl list-units  |grep -i clock
+systemctl status fake-hwclock.service
+cat /lib/systemd/system/fake-hwclock.service
+systemctl status fake-hwclock.service
+systemctl disable fake-hwclock.service
+sudo systemctl status fake-hwclock.service
+sudo systemctl disable fake-hwclock.service
+sudo update-rc.d -f fake-hwclock remove
+sudo apt remove fake-hwclock 
+ls -l /etc/init.d/
+ls /etc/init.d/
+ls -l  /etc/init.d/fake-hwclock
+sudo dpkg-query -S  /etc/init.d/fake-hwclock
+sudo apt purge fake-hwclock 
+dpkg-reconfigure tzdata 
+sudo dpkg-reconfigure tzdata 
+date
+man hwclock 
+hwclock -s
+sudo hwclock --verbose -s
+date
+sudo ls  /etc/udev/
+sudo systemctl list-units |grep time
+sudo systemctl list-units *time*
+sudo systemctl list-units *date*
+dpkg-query hwclock-set
+dpkg-query -S hwclock-set
+less /lib/udev/hwclock-set
+sudo vim /lib/udev/hwclock-set
+ls
+sudo vim /lib/udev/hwclock-set
+date
+sudo poweroff
+date
+sudo journalctl -n 500
+date
+sudo poweroff
+reboot
+sudo reboot
+screen --list
+screen -list
+man screen
+man screen |grep shared
+screen -X
+screen -x
+sudo reboot
+screen -x
+sudo reboot
+reboot
+sudo reboot
+ip a
+sudo reboot
+reboot
+sudo reboot

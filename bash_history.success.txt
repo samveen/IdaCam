@@ -1,0 +1,453 @@
+sudo reboot
+ip a
+sudo apt update
+sudo apt upgrade
+sudo apt autoremove
+sudo reboot
+cd /var/log/
+ls
+less daemon.log 
+sudo apt dist-upgrade
+uname -r
+cd
+sudo apt install git cmake 
+sudo apt search dkms
+sudo apt search dkms |grep ^dkms
+sudo apt show dkms
+sudo apt install git cmake dkms
+gcc
+which gcc
+ls -l /usr/bin/gcc
+sudo apt install git cmake dkms
+ls -a
+sudo su -
+git clone https://github.com/juj/fbcp-ili9341.git
+cd fbcp-ili9341/
+git log
+ls *32b*
+less freeplaytech_waveshare32b.h 
+less waveshare35b.h 
+git grep ILI9341
+cmake -DILI9341=ON -DSPI_BUS_CLOCK_DIVISOR=6 -DGPIO_TFT_DATA_CONTROL=22 -DGPIO_TFT_RESET_PIN=27 -DDISPLAY_ROTATE_180_DEGREES=ON -S . -B build/
+cd build/
+make
+file fbcp-ili9341 
+sudo install -s -t /usr/local/sbin fbcp-ili9341 
+ls -l /usr/local/sbin/
+cd ..
+wget https://raw.githubusercontent.com/samveen/pi4-cputempd/master/pi4-cputempd.service
+mv pi4-cputempd.service fbcp.service
+vim fbcp.service 
+ls -l fbcp-ili9341 /usr/local/sbin/fbcp-ili9341 
+vim fbcp.conf
+ls -l fbcp.conf
+sudo install -m 0644 -t /etc fbcp.conf 
+ls -l /etc/fbcp.conf 
+sudo install -m 0644 -t /etc/systemd/system fbcp.service 
+sudo systemctl daemon-reload
+sudo systemctl status fbcp
+sudo systemctl enable fbcp
+sudo systemctl start fbcp
+sudo vim /etc/hosts
+sudo hostnamectl --static set-hostname idacam
+sudo hostnamectl --transient set-hostname idacam
+sudo hostnamectl --pretty set-hostname idacam
+sudo hostnamectl set-icon-name camera-photo
+sudo reboot
+sudo poweroff
+raspinfo 2>&1 |less
+sudo raspi-config 
+cat /boot/config.txt 
+cat /boot/config.txt  |grep -i cam
+sudo reboot
+raspistill -o test.jpg
+raspistill -k -o test.jpg
+man raspistill
+raspistill 
+raspistill 2>&1 |less
+raspistill -s -o test.jpg
+sudo poweroff
+raspistill -s -o test.jpg
+bg
+which python
+python --version
+python3 --version
+dpkg -l python3*
+vim test.py
+python test.py
+vim test.py
+python test.py
+vim test.py
+python test.py
+vim test.py
+python test.py
+ls
+mv test.py led.py
+vim button.py
+wget 'https://gist.githubusercontent.com/elktros/faa43bbf413d4414e2cbbea580143d05/raw/fa20d16aa3fcd1749117a7d9f58131656cab55c8/Raspberry_Button_Tutorial.py'
+mv Raspberry_Button_Tutorial.py button.py
+vim button.py 
+ls
+cat led.py 
+vim button.py 
+cat led.py 
+vim button.py 
+python button.py 
+vim button.py 
+python button.py 
+vim button.py 
+python button.py 
+mv button.py Raspberry_Button_Tutorial.py 
+vim button.py
+cat led.py 
+vim button.py
+cat led.py 
+vim button.py
+python button.py 
+vim button.py
+python button.py 
+vim button.py
+python button.py 
+vim button.py
+sudo dmesg |tail
+cat button.py 
+ls /sys/class/gpio/
+ls -l /sys/class/gpio/
+sudo cat  /sys/class/gpio/export 
+sudo cat  /sys/class/gpio/gpiochip0
+sudo ls  /sys/class/gpio/gpiochip0
+sudo ls -l /sys/class/gpio/gpiochip0
+sudo ca
+sudo ls -l /sys/class/gpio/gpiochip0/uevent 
+sudo cat  /sys/class/gpio/gpiochip0/uevent 
+sudo tail -f /sys/class/gpio/gpiochip0/uevent 
+python led.py
+vim button.py 
+python button.py 
+vim button.py 
+python button.py 
+sudo poweroff
+vim button.py 
+python led.py
+vim button.py 
+python button.py 
+ls
+vim Raspberry_Button_Tutorial.py 
+python Raspberry_Button_Tutorial.py 
+ls
+sudo systemctl list-unit-files *clock*
+sudo systemctl status hwclock.service
+sudo systemctl list-unit-files *clock*
+sudo find / -name 'hwclock.service'
+ls -l /usr/lib/systemd/system/hwclock.service
+raspistill --help
+raspistill -s -o test.jpg &
+man raspistill
+raspistill --help 2>&1 |less
+fg
+raspistill -s -ts -o "IMG_%d.jpg" &
+ls
+jobs
+ps -ef |grep 734
+kill -USR1 734
+ls
+kill -USR1 734
+ls
+rm -f IMG_163196472*
+mkdir DCIM
+cat /etc/fstab 
+vim /etc/fstab 
+sudo vim /etc/fstab 
+pwd
+ls
+ls DCIM/
+(cd DCIM && echo $PWD)
+sudo vim /etc/fstab 
+cat  /etc/fstab 
+man fstab
+ls -l
+cd DCIM/
+ls -l
+ls -ld
+cd ..
+sudo mount DCIM/
+cd DCIM/
+ls -l
+ls -ld
+sudo chown pi:pi .
+ls -l
+ls -ld
+cd ..
+ls
+jobs
+fg
+raspistill -s -ts -o "DCIM/IMG_%d.jpg" &
+kill -USR1 842
+ls DCIM/
+kill -USR1 842
+ls DCIM/
+apt search fim
+apt search fim |grep fim
+apt install fim
+sudo apt install fim
+sudo apt install --no-install-recommends fim
+sudo apt search fbi
+sudo apt install fbi
+sudo apt install --no-install-recommends fbi
+ip a
+sudo apt install --no-install-recommends fbi
+fg
+fbi 
+fbi  DCIM/IMG_1631964978.jpg 
+sudo fbi  DCIM/IMG_1631964978.jpg 
+man FBI
+fbi -t 1  DCIM/IMG_1631964978.jpg 
+tty
+man fbi
+fbi -d /dev/fb0   DCIM/IMG_1631964978.jpg 
+sudo fbi -d /dev/fb0   DCIM/IMG_1631964978.jpg 
+man fbi
+sudo fbi -vd /dev/fb0   DCIM/IMG_1631964978.jpg 
+fbi -v -d /dev/fb0   DCIM/IMG_1631964978.jpg 
+fbi -v -d /dev/fb0 -a  DCIM/IMG_1631964978.jpg 
+fbi -v -a /dev/fb0   DCIM/IMG_1631964978.jpg 
+sudo fbi -v -a /dev/fb0   DCIM/IMG_1631964978.jpg 
+sudo fbi -v -d /dev/fb0 -T 1  DCIM/IMG_1631964978.jpg 
+sudo fbi -v -d /dev/fb0 -T 2  DCIM/IMG_1631964978.jpg 
+man fbi
+sudo fbi -v -T 1  DCIM/IMG_1631964978.jpg 
+sudo fbi -v -T 1  DCIM/IMG_1631964983.jpg 
+fbi -v -T 1  DCIM/IMG_1631964983.jpg 
+sudo fbi -v -T 1  DCIM/IMG_1631964983.jpg 
+ls
+vim button.py 
+python button.py 
+vim button.py 
+python button.py 
+vim button.py 
+python button.py 
+ls
+vim Raspberry_Button_Tutorial.py 
+ip a
+ls -a
+ls 
+less raspinfo.txt 
+ls
+less raspinfo.txt 
+sudo raspinfo 
+less raspinfo.txt 
+sudo poweroff
+ls -a .ssh/known_hosts 
+cat  .ssh/authorized_keys 
+ip a
+vim .bashrc 
+screen -X
+screen -x
+python camera.py 
+ls
+vim camera.py 
+python camera.py 
+vim camera.py 
+python camera.py 
+vim camera.py 
+python camera.py 
+vim camera.py 
+python camera.py 
+history
+sudo fbi -v -T 1  DCIM/IMG_1631964983.jpg 
+man fbi
+fbi -v -T 1  DCIM/IMG_1631964983.jpg 
+sudo fbi -v -T 1  DCIM/*.jpg
+man fbi
+sudo fbi -vv -T 1  DCIM/*.jpg
+ps -ef |grep fbi
+killall fbi
+sudo killall fbi
+ps -ef |grep fbi
+tty
+ps -ef |grep bash
+vim .bashrc 
+tty
+vim .bashrc 
+vim .profile 
+vim .bashrc 
+sudo reboot
+ip a
+ls -a
+ls
+cat .bashrc 
+bash -c 'echo k >gal.input'
+vim .bashrc 
+ps -ef |grep tty1 | awk '/bash/{print $2}'
+ps -ef |grep tty1 | awk '/bash/{print $2}' |xargs -rn1 killall
+ps -ef |grep tty1 | awk '/bash/{print $2}'
+ps -ef |grep tty1 
+ps -ef |grep tty1 | awk '/bash/{print $2}' |xargs -rn1 killall
+ps -ef |grep tty1 | awk '/bash/{print $2}' |xargs -rn1 kill -HUP
+ps -ef |grep fbi
+killall fbi
+vim .bashrc 
+whoami
+who am i
+id
+ls -l /dev/fb0 
+vim .bashrc 
+ps -ef |grep tty1 | awk '/bash/{print $2}' |xargs -rn1 kill -HUP
+ls
+ls -l
+less fbi.strace 
+ls -l 
+less fbi.strace 
+ls -l
+ls -l /dev/tty1
+echo -n j /dev/tty
+echo -n j >/dev/tty
+echo -n k >/dev/tty
+man fbi
+echo -n j >/dev/tty
+echo -n k >/dev/tty
+echo -n H >/dev/tty
+echo -n h >/dev/tty
+lsmod
+lsmod |grep uinput
+modprobe uinput
+sudo modprobe uinput
+lsmod |grep uinput
+sudo dmes |tail
+sudo dmesg |tail
+sudo apt update
+sudo su -
+sudo apt update
+sudo apt list --upgradable
+sudo apt upgrade
+sudo reboot
+£
+%fbi DCIM/*.jpg
+fbi DCIM/*.jpg
+ls
+sudo modprobe uinput
+ls /etc/modules-load.d/
+ls -l /etc/modules-load.d/
+ls -l /etc/modules
+cat  /etc/modules
+sudo vim /etc/modules-load.d/load-uinput.conf
+sudo apt search fauxcon
+git clone 'git@github.com:lornix/fauxcon.git'
+cd fauxcon/
+make
+ls -l
+file fauxcon
+sudo make install
+ls -l  /usr/local/bin/fauxcon 
+file /usr/local/bin/fauxcon 
+ls -l /etc/udev/rules.d/99-uinput.rules
+sudo ls -l /etc/udev/rules.d/99-uinput.rules
+sudo vim /etc/udev/rules.d/99-uinput.rules
+sudo groupadd uinput
+getent group uinput
+man usermod 
+sudo usermod -a -G uinput pi
+id
+vim camera.py 
+python camera.py 
+vim camera.py 
+python camera.py 
+sudo apt search six
+sudo apt show  python-six
+sudo apt install  python-six
+vim camera.py 
+python camera.py 
+fauxcon -C tty1
+vim camera.py 
+screen -list
+raspistill -s -ts -o "DCIM/IMG_%d.jpg"
+vim camera.py 
+python camera.py 
+ps -ef |grep fbi
+fauxcon -C tty1
+vim camera.py 
+python camera.py 
+ls DCIM/
+screen -DR "camera"
+man fbi
+fauxcon -C tty1
+ls
+fbi DCIM/*.jpg
+fbi -a DCIM/*.jpg
+python camera.py 
+killall fbi
+vim .bashrc 
+id
+ls -l /dev/fb0 
+ls -l /dev/tty1
+sudo lsmod |grep uinput
+sudo modprobe uinput
+sudo lsmod |grep uinput
+sudo dmesg |tail
+sudo apt update
+sudo apt list --upgradable
+sudo apt upgrade
+sudo reboot
+ls -l /etc/modules-load.d/
+cat  /etc/modules
+sudo vim /etc/modules-load.d/load-uinput.conf
+sudo apt search fauxcon
+cd fauxcon/
+sudo make install
+ls -l  /usr/local/bin/fauxcon 
+file /usr/local/bin/fauxcon 
+sudo ls -l /etc/udev/rules.d/99-uinput.rules
+sudo vim /etc/udev/rules.d/99-uinput.rules
+sudo groupadd uinput
+getent group uinput
+sudo usermod -a -G uinput pi
+sudo reboot
+fauxcon -C tty1
+vim camera.py 
+python camera.py 
+raspistill -s -ts -o "DCIM/IMG_%d.jpg"
+ls DCIM/
+vim .bashrc
+screen -S "camera"  -d -m  -t "camera" python camera.py
+screen -list
+screen -DR camera
+free
+sudo swapon -s
+ls -lh /var/swap
+cd /var/
+sudo dd if=/dev/zero of=swap.large bs=1M count=256 status=progress
+sudo mkswap swap.large 
+file swap.large 
+cat  /etc/fstab 
+man dphys-swapfile 
+cat /etc/dphys-swapfile 
+sudo systemctl list-units '*swap*'
+sudo systemctl status '*swap*'
+cat /lib/systemd/system/dphys-swapfile.service
+cat  /lib/systemd/system/swap.target
+sudo systemctl stop dphys-swapfile 
+sudo vim /etc/dphys-swapfile 
+sudo systemctl start dphys-swapfile 
+ls -lh /var/swap
+free -h
+sudo systemctl list-units
+sudo systemctl status '*avahi*'
+sudo systemctl list-units '*avahi*'
+sudo systemctl stop '*avahi*'
+sudo systemctl list-unit-files '*avahi*'
+sudo systemctl disable avahi-daemon.service avahi-daemon.socket
+sudo systemctl list-unit-files '*avahi*'
+sudo systemctl list-units 
+sudo systemctl list-unit-files '*lue*'
+sudo systemctl stop bluetooth.service dbus-org.bluez.service
+sudo systemctl disable  bluetooth.service dbus-org.bluez.service
+sudo systemctl list-unit-files  bluetooth.service dbus-org.bluez.service
+sudo systemctl list-units 
+sudo systemctl status hciuart.service
+sudo systemctl stop  hciuart.service
+sudo systemctl disable  hciuart.service
+sudo systemctl status rpi-eeprom-update.service
+less /lib/systemd/system/rpi-eeprom-update.service
+sudo systemctl list-units |awk '/\.service/{print $1}'
+sudo systemctl status rsyslog.service
+sudo reboot
