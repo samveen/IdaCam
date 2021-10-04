@@ -10,6 +10,7 @@ camera went through.
     sudo apt autoremove
     sudo reboot
     sudo apt dist-upgrade
+    sudo apt install vim
     sudo reboot
 
     # hostname
@@ -71,7 +72,7 @@ camera went through.
     sudo systemctl status fbcp
     sudo reboot
 
-    # enable camera module
+    # enable camera module and enable auto-login on tty1
     sudo raspi-config 
     sudo reboot
     raspistill -o test.jpg
@@ -183,7 +184,16 @@ camera went through.
     # Magic complete, but check references for inner workings of magic
     vim camera.py 
     python camera.py 
-    vim .bashrc 
 
+    # Auto run for the camera app
+    cat >>.bashrc <<_ENDL
+
+    # Start camera code in background on tty1
+    if tty | grep -q tty1; then
+      python camera.py >>camera.log 2>&1 &
+    fi
+    _ENDL
+
+    # It's ALIVE
     sudo reboot
 
