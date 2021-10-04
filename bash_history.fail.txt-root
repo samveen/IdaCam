@@ -1,0 +1,64 @@
+
+sudo journalctl 
+lspci 
+lsblk
+ls /sys/
+ls /sys/dev
+ls /sys/devices/
+ls /sys/devices/system/
+ls /sys/devices/platform/
+ls /sys/class/
+ls /sys/class/bluetooth/
+ls /sys/class/bluetooth/hci0
+ls /sys/class/bluetooth/hci0de
+ls /sys/class/bluetooth/hci0/device
+sudo dmesg |less
+sudo dmesg |grep -i bluetooth
+sudo dmesg |grep -i wifi
+sudo dmesg |grep -i wlan
+ip a
+sudo dmesg |grep -i wl
+ls
+systemctl list-units 
+systemctl list-units  |grep wpa
+systemctl status wpa_supplicant.service 
+ls /etc/wpa_supplicant/
+ls /etc/wpa_supplicant/wpa_supplicant.conf 
+cat  /etc/wpa_supplicant/wpa_supplicant.conf 
+man wpa_supplicant
+systemctl status wpa_supplicant.service 
+cat /lib/systemd/system/wpa_supplicant.service
+raspi-config 
+cd /etc/wpa_supplicant/
+ls
+cat wpa_supplicant.conf 
+ip a
+ip r
+ip addr add 192.168.1.31 dev wlan0
+ip a
+ip addr del 192.168.1.31/32 dev wlan0
+ip addr add 192.168.1.31/24 dev wlan0
+ip addr del 169.254.127.138/16 dev wlan0
+ip a
+ip r
+ip r add default via 192.168.1.1
+cat /etc/resolv.conf 
+resolvectl 
+cat /etc/hosts
+vim /etc/resolv.conf 
+vi /etc/resolv.conf
+host google.com
+apt update
+apt list --upgradable
+apt search twm
+apt upgrade
+ls
+cd
+ls
+git
+apt install twm
+apt install xserver-xorg-input-evdev
+apt install --no-install-recommends  xserver-xorg-input-evdev
+apt install xserver-xorg-input-evdev
+ls
+sudo poweroff
