@@ -1,0 +1,6 @@
+if tty | grep -q tty1; then
+    if [[ -e .do_startx ]]; then
+        startx
+    fi
+    screen -S "console1"
+fi

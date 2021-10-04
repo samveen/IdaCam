@@ -1,0 +1,4 @@
+#!/bin/bash -x
+
+exec xterm -ls screen
+#exec twm
